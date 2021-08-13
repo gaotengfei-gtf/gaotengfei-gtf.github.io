@@ -220,7 +220,7 @@ WIDGET = {
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      779 字
+      859 字
     </span>
   
 
@@ -230,7 +230,7 @@ WIDGET = {
       <i class="iconfont icon-clock-fill"></i>
       
       
-      9
+      10
        分钟
     </span>
   
@@ -264,7 +264,7 @@ WIDGET = {
             
               <p class="note note-info">
                 
-                  本文最后更新于：6 小时前
+                  本文最后更新于：1 分钟前
                 
               </p>
             
@@ -329,6 +329,19 @@ WIDGET = {
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git tag -d 标签名称<br></code></pre></td></tr></table></figure>
 <p>查看此版本所修改内容</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git show 标签名称<br></code></pre></td></tr></table></figure>
+
+<h2 id="Git-版本回退"><a href="#Git-版本回退" class="headerlink" title="Git 版本回退"></a>Git 版本回退</h2><p>查看提交日志,每一次提交都有对应的 *<strong>commit id*</strong> 和 ***commit message***。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">git log<br><span class="hljs-meta">#</span><span class="bash"> 提交的信息会在一行显示</span><br>git log --pretty=oneline<br></code></pre></td></tr></table></figure>
+
+<p>根据id会退到指定的版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git reset --hard id(根据日志，可以查看到id号)<br></code></pre></td></tr></table></figure>
+
+<p>查看命令操作的历史</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git reflog<br></code></pre></td></tr></table></figure>
+
+
+
+
             </div>
             <hr>
             <div>
